@@ -1,0 +1,263 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --primary-color: #b97166;
+    --font-color: #97635b;
+    --background-color: #fff0e377;
+}
+body {
+    font-size: 18px;
+    font-family: "Roboto Slab", serif;
+    background: var(--background-color);
+}
+button {
+    border: none;
+    outline: none;
+    background: transparent;
+    cursor: pointer;
+}
+a,
+p {
+    text-decoration: none;
+}
+a{
+    color: white;
+}
+i {
+    font-size: 18px;
+}
+input {
+    font-size: 16px;
+}
+img{
+    width: 100%;
+}
+/* -----------------HEADER--------------------- */
+/* chiều rộng full, mở rộng toàn bộ chiều rộng vừa với vùng xem */
+.container-full {
+    max-width: 1263px;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* fix chiều rộng dựa trên độ rộng của màn hình hiển thị */
+.container {
+    max-width: 1084px;
+    margin: 0 auto;
+}
+.header {
+    background: white;
+    position: sticky;
+    top: 0;
+}
+.heading {
+    display: grid;
+    grid-template: 100%/ 35% 30% 35%;
+    align-items: center;
+    padding: 10px;
+    background: white;
+}
+.heading-links a {
+    padding-left: 20px;
+}
+.heading-logo {
+    margin: 0 auto;   
+    width: 130px;
+}
+.heading-btn {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+.heading-search,
+.heading-account,
+.heading-shopping,
+.cam-ket-item i,
+.footer-signup {
+    width: 35px;
+    height: 35px;
+    margin-right: 20px;
+    background: var(--primary-color);
+    border-radius: 15px;
+    color: white;    
+    box-shadow: 5px 5px 8px #888888;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.heading-search,
+.footer-signup {
+    background: white;
+    overflow: hidden;
+    position: relative;
+    transition: all 0.5s ease;
+}
+.search-input,
+.signup-input {
+    height: 100%;
+    width: 100%;
+    padding: 10px 40px 10px 15px;
+    outline: none;
+    border: none;
+    background: transparent;
+}
+.search-btn,
+.signup-btn {
+    width: 35px;
+    height: 35px;
+    top: 0;
+    right: 0;
+    position: absolute;
+    background: var(--primary-color);
+    color: white;
+}
+.heading-search.open {
+    width: 250px;
+}
+.shopping-number {
+    background: #e74228;
+    border-radius: 5px;
+    width: fit-content;
+    height: 25px;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    margin-left: -13px;
+    font-weight: bold;
+}
+.shopping-number i {
+    margin-left: -10px;
+    color: #e74228;
+}
+/*-------------- NAVIGATION -------------*/
+.nav {
+    background: var(--primary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    grid-gap: 30px;
+}
+.nav a {
+    color: white;
+}
+
+/*-------------- ĐỒNG HỒ NAM, NỮ ----------------*/
+.dong-ho-nu,
+.dong-ho-nam {
+    display: grid;
+    grid-template: 100% / 542px 542px;
+    text-align: center;
+}
+.dong-ho-nu-detail,
+.dong-ho-nam-detail {
+    padding: 90px;
+}
+.left-right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+}
+/* -----------TOP SẢN PHẨM BÁN CHẠY--------------- */
+.top-san-pham {
+    text-align: center;
+    margin: 100px 0;
+    padding: 0 20px;
+}
+.top-san-pham h1 {
+    margin: 30px auto;
+}
+/* -----ĐỒNG HỒ ĐÔI----PHỤ KIỆN----- */
+.dong-ho-doi, .phu-kien{
+    display: grid;
+    grid-template: 100% / auto auto;
+    text-align: center;
+    align-items: center;
+    margin: 100px 0;
+}
+/* ----LIST ---- LIST-CARD ---- CARD-DETAIL---- */
+.list, .list-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    grid-gap: 20px;
+}
+.card-detail {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px var(--primary-color);
+    padding: 10px;
+}
+/* -------------CAM KẾT-------------- */
+.cam-ket {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 100px;
+    padding: 20px 0;
+    grid-gap: 30px;
+    background:white;
+    box-shadow: 0px 0px 5px var(--primary-color);
+    border-radius: 15px;
+}
+.cam-ket-item i{
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+/*------------ FOOTER ------------*/
+.footer {
+    background: var(--primary-color);
+}
+hr {
+    visibility: hidden;
+}
+.footer-logo {
+    width: 120px;
+    height: 120px;
+    margin: 0 auto;
+    margin-top: -60px;
+    box-shadow: 0px 4px 6px var(--font-color);
+    background: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px;
+}
+.footer-logo img {
+    width: 100px;
+}
+.footer-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-gap: 90px;
+    color: white;
+    padding-bottom: 30px;
+}
+.footer-item h4 {
+    margin: 20px 0;
+}
+.footer-signup {
+    width: 100%;
+    box-shadow: 2px 2px 5px 1px rgb(202, 197, 197);
+}
+.footer-item a{
+    display: block;
+    margin-bottom: 10px;
+    font-weight: 300;
+    font-size: 14px;
+    color: white;
+}
+.footer-item .footer-icon{
+    margin-top: 22px;
+    display: inline-flex;
+    padding-right: 15px;
+}
