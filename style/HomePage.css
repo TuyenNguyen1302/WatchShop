@@ -176,6 +176,7 @@ img{
 .dong-ho-doi, .phu-kien{
     display: grid;
     grid-template: 100% / auto auto;
+    grid-gap: 20px;
     text-align: center;
     align-items: center;
     margin: 100px 0;
