@@ -9,7 +9,8 @@
     --background-color: #fff0e377;
 }
 body {
-    font-size: 18px;
+    width: 1263px;
+    margin: 0 auto;
     font-family: "Roboto Slab", serif;
     background: var(--background-color);
 }
@@ -22,66 +23,65 @@ button {
 a,
 p {
     text-decoration: none;
+    color: black;
 }
-a{
-    color: white;
-}
-i {
+i,
+p,
+span,
+a {
     font-size: 18px;
 }
 input {
     font-size: 16px;
 }
-img{
+img {
     width: 100%;
 }
-/* -----------------HEADER--------------------- */
 /* chiều rộng full, mở rộng toàn bộ chiều rộng vừa với vùng xem */
-.container-full {
-    max-width: 1263px;
-    margin-left: auto;
-    margin-right: auto;
-}
+/* .container-full {
+    width: 1263px;
+    margin: 0 auto;
+} */
 /* fix chiều rộng dựa trên độ rộng của màn hình hiển thị */
 .container {
-    max-width: 1084px;
+    width: 1084px;
     margin: 0 auto;
 }
+/* -----------------HEADER--------------------- */
 .header {
     background: white;
     position: sticky;
     top: 0;
+    z-index: 1; /* đặt thứ tự ngăn xếp của phần tử .sale có pos=absolute */
 }
 .heading {
     display: grid;
-    grid-template: 100%/ 35% 30% 35%;
+    grid-template-columns: 1fr 1fr 1fr; /* 1fr = 1263/3 */
     align-items: center;
-    padding: 10px;
+    padding: 0 10px;
     background: white;
 }
-.heading-links a {
-    padding-left: 20px;
-}
 .heading-logo {
-    margin: 0 auto;   
+    margin: 0 auto;
     width: 130px;
 }
-.heading-btn {
+.heading-right {
     display: flex;
     justify-content: right;
     align-items: center;
+    grid-gap: 20px;
 }
 .heading-search,
 .heading-account,
 .heading-shopping,
+.card-btn button,
 .cam-ket-item i,
 .footer-signup {
     width: 35px;
     height: 35px;
-    margin-right: 20px;
     background: var(--primary-color);
     border-radius: 15px;
-    color: white;    
+    color: white;
     box-shadow: 5px 5px 8px #888888;
     display: flex;
     justify-content: center;
@@ -150,50 +150,105 @@ img{
 .dong-ho-nu,
 .dong-ho-nam {
     display: grid;
-    grid-template: 100% / 542px 542px;
+    /* grid-template: 100% / 542px 542px; */
+    grid-template: 100% / 1fr 1fr;
     text-align: center;
 }
 .dong-ho-nu-detail,
 .dong-ho-nam-detail {
     padding: 90px;
 }
-.left-right{
+.left-right {
     display: flex;
     justify-content: center;
     align-items: center;
     justify-content: space-between;
 }
-/* -----------TOP SẢN PHẨM BÁN CHẠY--------------- */
-.top-san-pham {
+/* -------TOP SẢN PHẨM BÁN CHẠY-----TIN TUC----- */
+.top-san-pham, .tin-tuc {
     text-align: center;
-    margin: 100px 0;
-    padding: 0 20px;
+    margin: 80px auto;
 }
-.top-san-pham h1 {
+.top-san-pham h1, .tin-tuc h1 {
+    padding: 10px 0;
+    width: fit-content;
     margin: 30px auto;
+    border-bottom: 3px solid var(--primary-color);
 }
 /* -----ĐỒNG HỒ ĐÔI----PHỤ KIỆN----- */
-.dong-ho-doi, .phu-kien{
+.dong-ho-doi,
+.phu-kien {
     display: grid;
-    grid-template: 100% / auto auto;
+    grid-template: 100% / 1fr 1fr;
     grid-gap: 20px;
     text-align: center;
     align-items: center;
-    margin: 100px 0;
+    margin: 80px auto;
 }
 /* ----LIST ---- LIST-CARD ---- CARD-DETAIL---- */
-.list, .list-card {
+.list,
+.list-card {
     display: flex;
     justify-content: space-between;
     align-items: center;
     text-align: center;
     grid-gap: 20px;
 }
-.card-detail {
+.card-detail, .news {
     background: white;
     border-radius: 10px;
     box-shadow: 0px 0px 5px var(--primary-color);
-    padding: 10px;
+    overflow: hidden;
+    position: relative;
+}
+.card-img img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    transition: 0.3s all ease-in-out;
+}
+.card-img img:first-child {
+    position: relative;
+}
+.card-img img:last-child {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    opacity: 0;
+}
+.star {
+    font-size: 12px;
+}
+.price {
+    padding: 0 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.card-sale {
+    position: absolute;
+    top: 0;
+    right: 3%;
+    color: red;
+}
+.card-btn {
+    top: 15%;
+    right: 3%;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    grid-gap: 8px;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s all ease-in-out;
+}
+.card-detail:hover .card-btn,
+.card-detail:hover img:last-child {
+    visibility: visible;
+    opacity: 1;
+}
+.card-info .name{
+    color: var(--primary-color);
 }
 /* -------------CAM KẾT-------------- */
 .cam-ket {
@@ -201,16 +256,29 @@ img{
     justify-content: center;
     align-items: center;
     text-align: center;
-    margin-bottom: 100px;
-    padding: 20px 0;
+    margin-bottom: 80px;
+    padding: 30px;
     grid-gap: 30px;
-    background:white;
+    background: white;
     box-shadow: 0px 0px 5px var(--primary-color);
-    border-radius: 15px;
 }
-.cam-ket-item i{
+.cam-ket-item i {
     margin: 0 auto;
     margin-bottom: 10px;
+}
+/*------------ NEWS --------------*/
+.news img{
+    width: 350px;
+    height: 220px;
+    object-fit: cover;
+}
+.news-info{
+    padding: 20px;
+    text-align: left;
+}
+.news-info a{
+    font-weight: bold;
+    color: var(--primary-color);
 }
 /*------------ FOOTER ------------*/
 .footer {
@@ -250,14 +318,14 @@ hr {
     width: 100%;
     box-shadow: 2px 2px 5px 1px rgb(202, 197, 197);
 }
-.footer-item a{
+.footer-item a {
     display: block;
     margin-bottom: 10px;
     font-weight: 300;
     font-size: 14px;
     color: white;
 }
-.footer-item .footer-icon{
+.footer-item .footer-icon {
     margin-top: 22px;
     display: inline-flex;
     padding-right: 15px;
