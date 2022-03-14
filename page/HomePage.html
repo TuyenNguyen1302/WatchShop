@@ -6,11 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Anatole Watch</title>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <link rel="stylesheet" href="/style/HomePage.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.css" />
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;500;700&display=swap"
         rel="stylesheet">
-    <link rel="icon" type="image/x-icon" href="/image/favicon_A.png">
+    <link rel="icon" type="image/x-icon" href="/image/logo/favicon_A.png">
 </head>
 
 <body>
@@ -18,33 +19,30 @@
         <div class="heading">
             <div class="heading-left">
                 <p>Sự khởi đầu tốt đẹp !</p>
-                <!-- <a href="#">Trang chủ</a>
-                    <a href="#">Sản phẩm</a>
-                    <a href="#">Tin tức</a> -->
             </div>
             <a href="#" class="heading-logo">
-                <img src="/image/logo.png" alt="No Image" />
+                <img src="/image/logo/logo.png" alt="No Image" />
             </a>
             <div class="heading-right">
-                <div class="heading-search">
+                <div class="heading-search icon">
                     <input type="text" class="search-input" placeholder="Tìm kiếm..." />
                     <button class="search-btn">
                         <i class="fa-solid fa-magnifying-glass"></i>
                     </button>
                 </div>
-                <a href="#" class="heading-account">
+                <a href="#" class="heading-account icon">
                     <i class="fa-solid fa-user"></i>
                 </a>
-                <a href="#" class="heading-shopping">
+                <a href="#" class="heading-shopping icon">
                     <i class="fa-solid fa-bag-shopping"></i>
                 </a>
-                <label class="shopping-number">
+                <label class="shopping-number middle">
                     <i class="fa-solid fa-caret-left"></i>
                     0
                 </label>
             </div>
         </div>
-        <div class="nav">
+        <div class="nav middle">
             <a href="#">Thương hiệu</a>
             <a href="#">Đồng hồ nữ</a>
             <a href="#">Đồng hồ nam</a>
@@ -57,460 +55,10 @@
     <div class="body">
         <!-- /* Banner */ -->
         <div class="banner">
-            <video src="/image/banner.mp4" width="100%" autoplay loop></video>
+            <video src="/image/banner/banner1.mp4" width="100%" autoplay loop></video>
         </div>
-        <!-- /* Đồng hồ nam và nữ */ -->
-        <div class="container dong-ho-nu">
-            <div class="dong-ho-nu-img">
-                <img src="/image/her.jpg" alt="No Image">
-            </div>
-            <div class="dong-ho-nu-detail">
-                <h1>Đồng hồ nữ</h1>
-                <div class="left-right">
-                    <i class="fa-solid fa-left-long left"></i>
-                    <img src="/image/her1.png" alt="No Image">
-                    <i class="fa-solid fa-right-long right"></i>
-                </div>
-                <p>Đồng hồ đeo tay nữ Breda Esther 1735 với vòng đeo tay bằng thép không gỉ, 26mm</p>
-            </div>
-        </div>
-        <div class="container dong-ho-nam">
-            <div class="dong-ho-nam-detail">
-                <h1>Đồng hồ nam</h1>
-                <div class="left-right">
-                    <i class="fa-solid fa-left-long left"></i>
-                    <img src="/image/him1.png" alt="No Image">
-                    <i class="fa-solid fa-right-long right"></i>
-                </div>
-                <p>Đồng hồ đeo tay nam Breda Virgil với vòng đeo tay bằng thép không gỉ, 26mm</p>
-            </div>
-            <div class="dong-ho-nam-img">
-                <img src="/image/him.jpg" alt="No Image">
-            </div>
-        </div>
-        <!-- /* Sản phẩm bán chạy nhất */ -->
-        <div class="top-san-pham">
-            <h1>Sản phẩm bán chạy nhất</h1>
-            <div class="list">
-                <i class="fa-solid fa-left-long"></i>
-                <div class="list-card">
-                    <div class="card-detail">
-                        <a href="#" class="card-img">
-                            <img src="/image/her1.png" alt="No Image">
-                            <img src="/image/1-1.jpg" alt="No Image">
-                        </a>
-                        <div class="card-sale">
-                            <span>-30%</span>
-                        </div>
-                        <div class="card-btn">
-                            <button class="card-shopping">
-                                <i class="fa-solid fa-bag-shopping"></i>
-                            </button>
-                            <button class="card-like">
-                                <i class="fa-solid fa-heart"></i>
-                            </button>
-                            <button class="card-view">
-                                <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
-                            </button>
-                        </div>
-                        <div class="card-info">
-                            <div class="category">
-                                <a href=""><small>Dong ho nu</small></a>
-                            </div>
-                            <h3 class="name">Dong ho Breda</h3>
-                            <div class="rating">
-                                <span>
-                                    <i class="fa-solid fa-star star"></i>
-                                    <i class="fa-solid fa-star star"></i>
-                                    <i class="fa-solid fa-star star"></i>
-                                    <i class="fa-solid fa-star star"></i>
-                                    <i class="fa-solid fa-star star"></i>
-                                </span>
-                            </div>
-                            <div class="price">
-                                <del class="old">3.000.000 ₫</del>
-                                <span class="new"><big>2.199.000 ₫</big></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card-detail">
-                        <a href="#" class="card-img">
-                            <img src="/image/him1.png" alt="No Image">
-                            <img src="/image/1-1.jpg" alt="No Image">
-                        </a>
-                        <div class="card-sale">
-                            <span>-30%</span>
-                        </div>
-                        <div class="card-btn">
-                            <button class="card-shopping">
-                                <i class="fa-solid fa-bag-shopping"></i>
-                            </button>
-                            <button class="card-like">
-                                <i class="fa-solid fa-heart"></i>
-                            </button>
-                            <button class="card-view">
-                                <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
-                            </button>
-                        </div>
-                        <div class="card-info">
-                            <div class="category">
-                                <a href=""><small>Dong ho nu</small></a>
-                            </div>
-                            <h3 class="name">Dong ho Breda</h3>
-                            <div class="rating">
-                                <span>
-                                    <i class="fa-solid fa-star star"></i>
-                                    <i class="fa-solid fa-star star"></i>
-                                    <i class="fa-solid fa-star star"></i>
-                                    <i class="fa-solid fa-star star"></i>
-                                    <i class="fa-solid fa-star star"></i>
-                                </span>
-                            </div>
-                            <div class="price">
-                                <del class="old">3.000.000 ₫</del>
-                                <span class="new"><big>2.199.000 ₫</big></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card-detail">
-                        <a href="#" class="card-img">
-                            <img src="/image/her1.png" alt="No Image">
-                            <img src="/image/1-1.jpg" alt="No Image">
-                        </a>
-                        <div class="card-sale">
-                            <span>-30%</span>
-                        </div>
-                        <div class="card-btn">
-                            <button class="card-shopping">
-                                <i class="fa-solid fa-bag-shopping"></i>
-                            </button>
-                            <button class="card-like">
-                                <i class="fa-solid fa-heart"></i>
-                            </button>
-                            <button class="card-view">
-                                <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
-                            </button>
-                        </div>
-                        <div class="card-info">
-                            <div class="category">
-                                <a href=""><small>Dong ho nu</small></a>
-                            </div>
-                            <h3 class="name">Dong ho Breda</h3>
-                            <div class="rating">
-                                <span>
-                                    <i class="fa-solid fa-star star"></i>
-                                    <i class="fa-solid fa-star star"></i>
-                                    <i class="fa-solid fa-star star"></i>
-                                    <i class="fa-solid fa-star star"></i>
-                                    <i class="fa-solid fa-star star"></i>
-                                </span>
-                            </div>
-                            <div class="price">
-                                <del class="old">3.000.000 ₫</del>
-                                <span class="new"><big>2.199.000 ₫</big></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card-detail">
-                        <a href="#" class="card-img">
-                            <img src="/image/her1.png" alt="No Image">
-                            <img src="/image/1-1.jpg" alt="No Image">
-                        </a>
-                        <div class="card-sale">
-                            <span>-30%</span>
-                        </div>
-                        <div class="card-btn">
-                            <button class="card-shopping">
-                                <i class="fa-solid fa-bag-shopping"></i>
-                            </button>
-                            <button class="card-like">
-                                <i class="fa-solid fa-heart"></i>
-                            </button>
-                            <button class="card-view">
-                                <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
-                            </button>
-                        </div>
-                        <div class="card-info">
-                            <div class="category">
-                                <a href=""><small>Dong ho nu</small></a>
-                            </div>
-                            <h3 class="name">Dong ho Breda</h3>
-                            <div class="rating">
-                                <span>
-                                    <i class="fa-solid fa-star star"></i>
-                                    <i class="fa-solid fa-star star"></i>
-                                    <i class="fa-solid fa-star star"></i>
-                                    <i class="fa-solid fa-star star"></i>
-                                    <i class="fa-solid fa-star star"></i>
-                                </span>
-                            </div>
-                            <div class="price">
-                                <del class="old">3.000.000 ₫</del>
-                                <span class="new"><big>2.199.000 ₫</big></span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <i class="fa-solid fa-right-long"></i>
-            </div>
-        </div>
-
-        <!-- /* Đồng hồ đôi và phụ kiện */ -->
-        <div class="container dong-ho-doi">
-            <h1>Đồng hồ đôi</h1>
-            <div class="list">
-                <i class="fa-solid fa-left-long left"></i>
-                <div class="list-card">
-                    <div class="card-detail">
-                        <a href="#" class="card-img">
-                            <img src="/image/him1.png" alt="No Image">
-                            <img src="/image/1-1.jpg" alt="No Image">
-                        </a>
-                        <div class="card-sale">
-                            <span>-30%</span>
-                        </div>
-                        <div class="card-btn">
-                            <button class="card-shopping">
-                                <i class="fa-solid fa-bag-shopping"></i>
-                            </button>
-                            <button class="card-like">
-                                <i class="fa-solid fa-heart"></i>
-                            </button>
-                            <button class="card-view">
-                                <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
-                            </button>
-                        </div>
-                        <div class="card-info">
-                            <div class="category">
-                                <a href=""><small>Dong ho nu</small></a>
-                            </div>
-                            <h3 class="name">Dong ho Breda</h3>
-                            <div class="rating">
-                                <span>
-                                    <i class="fa-solid fa-star star"></i>
-                                    <i class="fa-solid fa-star star"></i>
-                                    <i class="fa-solid fa-star star"></i>
-                                    <i class="fa-solid fa-star star"></i>
-                                    <i class="fa-solid fa-star star"></i>
-                                </span>
-                            </div>
-                            <div class="price">
-                                <del class="old">3.000.000 ₫</del>
-                                <span class="new"><big>2.199.000 ₫</big></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card-detail">
-                        <a href="#" class="card-img">
-                            <img src="/image/her1.png" alt="No Image">
-                            <img src="/image/1-1.jpg" alt="No Image">
-                        </a>
-                        <div class="card-sale">
-                            <span>-30%</span>
-                        </div>
-                        <div class="card-btn">
-                            <button class="card-shopping">
-                                <i class="fa-solid fa-bag-shopping"></i>
-                            </button>
-                            <button class="card-like">
-                                <i class="fa-solid fa-heart"></i>
-                            </button>
-                            <button class="card-view">
-                                <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
-                            </button>
-                        </div>
-                        <div class="card-info">
-                            <div class="category">
-                                <a href=""><small>Dong ho nu</small></a>
-                            </div>
-                            <h3 class="name">Dong ho Breda</h3>
-                            <div class="rating">
-                                <span>
-                                    <i class="fa-solid fa-star star"></i>
-                                    <i class="fa-solid fa-star star"></i>
-                                    <i class="fa-solid fa-star star"></i>
-                                    <i class="fa-solid fa-star star"></i>
-                                    <i class="fa-solid fa-star star"></i>
-                                </span>
-                            </div>
-                            <div class="price">
-                                <del class="old">3.000.000 ₫</del>
-                                <span class="new"><big>2.199.000 ₫</big></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card-detail">
-                        <a href="#" class="card-img">
-                            <img src="/image/her1.png" alt="No Image">
-                            <img src="/image/1-1.jpg" alt="No Image">
-                        </a>
-                        <div class="card-sale">
-                            <span>-30%</span>
-                        </div>
-                        <div class="card-btn">
-                            <button class="card-shopping">
-                                <i class="fa-solid fa-bag-shopping"></i>
-                            </button>
-                            <button class="card-like">
-                                <i class="fa-solid fa-heart"></i>
-                            </button>
-                            <button class="card-view">
-                                <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
-                            </button>
-                        </div>
-                        <div class="card-info">
-                            <div class="category">
-                                <a href=""><small>Dong ho nu</small></a>
-                            </div>
-                            <h3 class="name">Dong ho Breda</h3>
-                            <div class="rating">
-                                <span>
-                                    <i class="fa-solid fa-star star"></i>
-                                    <i class="fa-solid fa-star star"></i>
-                                    <i class="fa-solid fa-star star"></i>
-                                    <i class="fa-solid fa-star star"></i>
-                                    <i class="fa-solid fa-star star"></i>
-                                </span>
-                            </div>
-                            <div class="price">
-                                <del class="old">3.000.000 ₫</del>
-                                <span class="new"><big>2.199.000 ₫</big></span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <i class="fa-solid fa-right-long right"></i>
-            </div>
-        </div>
-        <div class="container phu-kien">
-            <div class="list">
-                <i class="fa-solid fa-left-long left"></i>
-                <div class="list-card">
-                    <div class="card-detail">
-                        <a href="#" class="card-img">
-                            <img src="/image/him1.png" alt="No Image">
-                            <img src="/image/1-1.jpg" alt="No Image">
-                        </a>
-                        <div class="card-sale">
-                            <span>-30%</span>
-                        </div>
-                        <div class="card-btn">
-                            <button class="card-shopping">
-                                <i class="fa-solid fa-bag-shopping"></i>
-                            </button>
-                            <button class="card-like">
-                                <i class="fa-solid fa-heart"></i>
-                            </button>
-                            <button class="card-view">
-                                <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
-                            </button>
-                        </div>
-                        <div class="card-info">
-                            <div class="category">
-                                <a href=""><small>Dong ho nu</small></a>
-                            </div>
-                            <h3 class="name">Dong ho Breda</h3>
-                            <div class="rating">
-                                <span>
-                                    <i class="fa-solid fa-star star"></i>
-                                    <i class="fa-solid fa-star star"></i>
-                                    <i class="fa-solid fa-star star"></i>
-                                    <i class="fa-solid fa-star star"></i>
-                                    <i class="fa-solid fa-star star"></i>
-                                </span>
-                            </div>
-                            <div class="price">
-                                <del class="old">3.000.000 ₫</del>
-                                <span class="new"><big>2.199.000 ₫</big></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card-detail">
-                        <a href="#" class="card-img">
-                            <img src="/image/her1.png" alt="No Image">
-                            <img src="/image/1-1.jpg" alt="No Image">
-                        </a>
-                        <div class="card-sale">
-                            <span>-30%</span>
-                        </div>
-                        <div class="card-btn">
-                            <button class="card-shopping">
-                                <i class="fa-solid fa-bag-shopping"></i>
-                            </button>
-                            <button class="card-like">
-                                <i class="fa-solid fa-heart"></i>
-                            </button>
-                            <button class="card-view">
-                                <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
-                            </button>
-                        </div>
-                        <div class="card-info">
-                            <div class="category">
-                                <a href=""><small>Dong ho nu</small></a>
-                            </div>
-                            <h3 class="name">Dong ho Breda</h3>
-                            <div class="rating">
-                                <span>
-                                    <i class="fa-solid fa-star star"></i>
-                                    <i class="fa-solid fa-star star"></i>
-                                    <i class="fa-solid fa-star star"></i>
-                                    <i class="fa-solid fa-star star"></i>
-                                    <i class="fa-solid fa-star star"></i>
-                                </span>
-                            </div>
-                            <div class="price">
-                                <del class="old">3.000.000 ₫</del>
-                                <span class="new"><big>2.199.000 ₫</big></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card-detail">
-                        <a href="#" class="card-img">
-                            <img src="/image/her1.png" alt="No Image">
-                            <img src="/image/1-1.jpg" alt="No Image">
-                        </a>
-                        <div class="card-sale">
-                            <span>-30%</span>
-                        </div>
-                        <div class="card-btn">
-                            <button class="card-shopping">
-                                <i class="fa-solid fa-bag-shopping"></i>
-                            </button>
-                            <button class="card-like">
-                                <i class="fa-solid fa-heart"></i>
-                            </button>
-                            <button class="card-view">
-                                <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
-                            </button>
-                        </div>
-                        <div class="card-info">
-                            <div class="category">
-                                <a href=""><small>Dong ho nu</small></a>
-                            </div>
-                            <h3 class="name">Dong ho Breda</h3>
-                            <div class="rating">
-                                <span>
-                                    <i class="fa-solid fa-star star"></i>
-                                    <i class="fa-solid fa-star star"></i>
-                                    <i class="fa-solid fa-star star"></i>
-                                    <i class="fa-solid fa-star star"></i>
-                                    <i class="fa-solid fa-star star"></i>
-                                </span>
-                            </div>
-                            <div class="price">
-                                <del class="old">3.000.000 ₫</del>
-                                <span class="new"><big>2.199.000 ₫</big></span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <i class="fa-solid fa-right-long right"></i>
-            </div>
-            <h1>Phụ kiện</h1>
-        </div>
-
         <!-- /* 6 icon cam kết */ -->
-        <div class="cam-ket">
+        <div class="cam-ket middle">
             <div class="cam-ket-item">
                 <i class="fa-solid fa-crown"></i>
                 <p>Sản phẩm chính hãng</p>
@@ -536,44 +84,333 @@
                 <p>Thay dây da giảm 50%</p>
             </div>
         </div>
+        <!-- /* Đồng hồ nam và nữ */ -->
+        <div class="container dong-ho-nu">
+            <div class="dong-ho-nu-img">
+                <img src="/image/breda/her/her.jpg" alt="No Image">
+            </div>
+            <div class="dong-ho-nu-detail">
+                <h1>Đồng hồ nữ</h1>
+                <div class="middle">
+                    <i class="fa-solid fa-left-long left"></i>
+                    <img src="/image/breda/her/her1.png" alt="No Image" class="show-img">
+                    <i class="fa-solid fa-right-long right"></i>
+                </div>
+                <div class="list-img" hidden>
+                    <img src="/image/breda/her/her1.png" alt="No Image">
+                    <img src="/image/breda/her/her2.png" alt="No Image">
+                </div>
+                <p>Đồng hồ đeo tay nữ Breda Esther 1735 với vòng đeo tay bằng thép không gỉ, 26mm</p>
+            </div>
+        </div>
+        <div class="container dong-ho-nam">
+            <div class="dong-ho-nam-detail">
+                <h1>Đồng hồ nam</h1>
+                <div class="middle">
+                    <i class="fa-solid fa-left-long left1"></i>
+                    <img src="/image/breda/him/him1.png" alt="No Image" class="show-img1">
+                    <i class="fa-solid fa-right-long right1"></i>
+                </div>
+                <div class="list-img1" hidden>
+                    <img src="/image/breda/him/him1.png" alt="No Image">
+                    <img src="/image/breda/him/him2.png" alt="No Image">
+                    <img src="/image/breda/him/him3.png" alt="No Image">
+                    <img src="/image/breda/him/him4.png" alt="No Image">
+                </div>
+                <p>Đồng hồ đeo tay nam Breda Virgil với vòng đeo tay bằng thép không gỉ, 26mm</p>
+            </div>
+            <div class="dong-ho-nam-img">
+                <img src="/image/breda/him/him.jpg" alt="No Image">
+            </div>
+        </div>
+        <!-- /* Sản phẩm bán chạy nhất */ -->
+        <div class="top-san-pham">
+            <h1>Sản phẩm bán chạy nhất</h1>
+            <div class="list-card">
+                <div class="card-detail">
+                    <a href="#" class="card-img">
+                        <img src="/image/her1.png" alt="No Image">
+                        <img src="/image/1-1.jpg" alt="No Image">
+                    </a>
+                    <div class="card-sale">
+                        <span>-30%</span>
+                    </div>
+                    <div class="card-btn">
+                        <button class="card-shopping">
+                            <i class="fa-solid fa-bag-shopping"></i>
+                        </button>
+                        <button class="card-like">
+                            <i class="fa-solid fa-heart"></i>
+                        </button>
+                        <button class="card-view">
+                            <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+                        </button>
+                    </div>
+                    <div class="card-info">
+                        <div class="category">
+                            <a href=""><small>Dong ho nu</small></a>
+                        </div>
+                        <h3 class="name">Dong ho Breda</h3>
+                        <div class="rating">
+                            <span>
+                                <i class="fa-solid fa-star star"></i>
+                                <i class="fa-solid fa-star star"></i>
+                                <i class="fa-solid fa-star star"></i>
+                                <i class="fa-solid fa-star star"></i>
+                                <i class="fa-solid fa-star star"></i>
+                            </span>
+                        </div>
+                        <div class="price">
+                            <del class="old">3.000.000 ₫</del>
+                            <span class="new"><big>2.199.000 ₫</big></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-detail">
+                    <a href="#" class="card-img">
+                        <img src="/image/him1.png" alt="No Image">
+                        <img src="/image/1-1.jpg" alt="No Image">
+                    </a>
+                    <div class="card-sale">
+                        <span>-30%</span>
+                    </div>
+                    <div class="card-btn">
+                        <button class="card-shopping">
+                            <i class="fa-solid fa-bag-shopping"></i>
+                        </button>
+                        <button class="card-like">
+                            <i class="fa-solid fa-heart"></i>
+                        </button>
+                        <button class="card-view">
+                            <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+                        </button>
+                    </div>
+                    <div class="card-info">
+                        <div class="category">
+                            <a href=""><small>Dong ho nu</small></a>
+                        </div>
+                        <h3 class="name">Dong ho Breda</h3>
+                        <div class="rating">
+                            <span>
+                                <i class="fa-solid fa-star star"></i>
+                                <i class="fa-solid fa-star star"></i>
+                                <i class="fa-solid fa-star star"></i>
+                                <i class="fa-solid fa-star star"></i>
+                                <i class="fa-solid fa-star star"></i>
+                            </span>
+                        </div>
+                        <div class="price">
+                            <del class="old">3.000.000 ₫</del>
+                            <span class="new"><big>2.199.000 ₫</big></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-detail">
+                    <a href="#" class="card-img">
+                        <img src="/image/her1.png" alt="No Image">
+                        <img src="/image/1-1.jpg" alt="No Image">
+                    </a>
+                    <div class="card-sale">
+                        <span>-30%</span>
+                    </div>
+                    <div class="card-btn">
+                        <button class="card-shopping">
+                            <i class="fa-solid fa-bag-shopping"></i>
+                        </button>
+                        <button class="card-like">
+                            <i class="fa-solid fa-heart"></i>
+                        </button>
+                        <button class="card-view">
+                            <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+                        </button>
+                    </div>
+                    <div class="card-info">
+                        <div class="category">
+                            <a href=""><small>Dong ho nu</small></a>
+                        </div>
+                        <h3 class="name">Dong ho Breda</h3>
+                        <div class="rating">
+                            <span>
+                                <i class="fa-solid fa-star star"></i>
+                                <i class="fa-solid fa-star star"></i>
+                                <i class="fa-solid fa-star star"></i>
+                                <i class="fa-solid fa-star star"></i>
+                                <i class="fa-solid fa-star star"></i>
+                            </span>
+                        </div>
+                        <div class="price">
+                            <del class="old">3.000.000 ₫</del>
+                            <span class="new"><big>2.199.000 ₫</big></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-detail">
+                    <a href="#" class="card-img">
+                        <img src="/image/him1.png" alt="No Image">
+                        <img src="/image/1-1.jpg" alt="No Image">
+                    </a>
+                    <div class="card-sale">
+                        <span>-30%</span>
+                    </div>
+                    <div class="card-btn">
+                        <button class="card-shopping">
+                            <i class="fa-solid fa-bag-shopping"></i>
+                        </button>
+                        <button class="card-like">
+                            <i class="fa-solid fa-heart"></i>
+                        </button>
+                        <button class="card-view">
+                            <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+                        </button>
+                    </div>
+                    <div class="card-info">
+                        <div class="category">
+                            <a href=""><small>Dong ho nu</small></a>
+                        </div>
+                        <h3 class="name">Dong ho Breda</h3>
+                        <div class="rating">
+                            <span>
+                                <i class="fa-solid fa-star star"></i>
+                                <i class="fa-solid fa-star star"></i>
+                                <i class="fa-solid fa-star star"></i>
+                                <i class="fa-solid fa-star star"></i>
+                                <i class="fa-solid fa-star star"></i>
+                            </span>
+                        </div>
+                        <div class="price">
+                            <del class="old">3.000.000 ₫</del>
+                            <span class="new"><big>2.199.000 ₫</big></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-detail">
+                    <a href="#" class="card-img">
+                        <img src="/image/her1.png" alt="No Image">
+                        <img src="/image/1-1.jpg" alt="No Image">
+                    </a>
+                    <div class="card-sale">
+                        <span>-30%</span>
+                    </div>
+                    <div class="card-btn">
+                        <button class="card-shopping">
+                            <i class="fa-solid fa-bag-shopping"></i>
+                        </button>
+                        <button class="card-like">
+                            <i class="fa-solid fa-heart"></i>
+                        </button>
+                        <button class="card-view">
+                            <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+                        </button>
+                    </div>
+                    <div class="card-info">
+                        <div class="category">
+                            <a href=""><small>Dong ho nu</small></a>
+                        </div>
+                        <h3 class="name">Dong ho Breda</h3>
+                        <div class="rating">
+                            <span>
+                                <i class="fa-solid fa-star star"></i>
+                                <i class="fa-solid fa-star star"></i>
+                                <i class="fa-solid fa-star star"></i>
+                                <i class="fa-solid fa-star star"></i>
+                                <i class="fa-solid fa-star star"></i>
+                            </span>
+                        </div>
+                        <div class="price">
+                            <del class="old">3.000.000 ₫</del>
+                            <span class="new"><big>2.199.000 ₫</big></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-detail">
+                    <a href="#" class="card-img">
+                        <img src="/image/him1.png" alt="No Image">
+                        <img src="/image/1-1.jpg" alt="No Image">
+                    </a>
+                    <div class="card-sale">
+                        <span>-30%</span>
+                    </div>
+                    <div class="card-btn">
+                        <button class="card-shopping">
+                            <i class="fa-solid fa-bag-shopping"></i>
+                        </button>
+                        <button class="card-like">
+                            <i class="fa-solid fa-heart"></i>
+                        </button>
+                        <button class="card-view">
+                            <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+                        </button>
+                    </div>
+                    <div class="card-info">
+                        <div class="category">
+                            <a href=""><small>Dong ho nu</small></a>
+                        </div>
+                        <h3 class="name">Dong ho Breda</h3>
+                        <div class="rating">
+                            <span>
+                                <i class="fa-solid fa-star star"></i>
+                                <i class="fa-solid fa-star star"></i>
+                                <i class="fa-solid fa-star star"></i>
+                                <i class="fa-solid fa-star star"></i>
+                                <i class="fa-solid fa-star star"></i>
+                            </span>
+                        </div>
+                        <div class="price">
+                            <del class="old">3.000.000 ₫</del>
+                            <span class="new"><big>2.199.000 ₫</big></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- /* Đồng hồ đôi và phụ kiện */ -->
+        <div class="doi-phu-kien">
+            <div class="dong-ho-doi">
+                <div class="mua-ngay middle">
+                    <h1>Đồng hồ đôi</h1>
+                    <a href="">Mua ngay</a>
+                </div>
+                <img src="/image/banner/banner-cou.png" alt="">
+            </div>
+            <div class="phu-kien">
+                <div class="mua-ngay middle">
+                    <h1>Phụ kiện</h1>
+                    <a href="">Mua ngay</a>
+                </div>
+                <img src="/image/banner/banner-item.png" alt="">
+            </div>
+        </div>
 
         <!-- Tin tức -->
         <div class="container tin-tuc">
             <h1>Tin tức</h1>
-            <div class="list">
-                <div class="list-card">
-                    <div class="news">
-                        <img src="/image/news1.jpg" alt="">
-                        <div class="news-info">
-                            <small class="day">13-03-2022</small>
-                            <h2 class="title">Happy</h2>
-                            <div class="content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima id vel
-                                voluptatibus ad odit odio laboriosam cupiditate unde velit reprehenderit doloribus,
-                                quaerat molestiae quisquam nam aliquid quis nulla eligendi reiciendis.</div>
-                            <a href="#">Đọc tiếp</a>
-                        </div>
+            <div class="list-news middle">
+                <div class="news">
+                    <img src="/image/news/news1.jpg" alt="">
+                    <div class="news-info">
+                        <small class="day">13-03-2022</small>
+                        <h2 class="title">Anatole</h2>
+                        <div class="content">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+                        <a href="#" class="middle"><span>Đọc tiếp</span><i class="fa-solid fa-right-long"></i></a>
                     </div>
-                    <div class="news">
-                        <img src="/image/news2.jpg" alt="">
-                        <div class="news-info">
-                            <small class="day">13-03-2022</small>
-                            <h2 class="title">Happy</h2>
-                            <div class="content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima id vel
-                                voluptatibus ad odit odio laboriosam cupiditate unde velit reprehenderit doloribus,
-                                quaerat molestiae quisquam nam aliquid quis nulla eligendi reiciendis.</div>
-                            <a href="#">Đọc tiếp</a>
-                        </div>
+                </div>
+                <div class="news">
+                    <img src="/image/news/news2.jpg" alt="">
+                    <div class="news-info">
+                        <small class="day">13-03-2022</small>
+                        <h2 class="title">Anatole</h2>
+                        <div class="content">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+                        <a href="#" class="middle"><span>Đọc tiếp</span><i class="fa-solid fa-right-long"></i></a>
                     </div>
-                    <div class="news">
-                        <img src="/image/news3.jpg" alt="">
-                        <div class="news-info">
-                            <small class="day">13-03-2022</small>
-                            <h2 class="title">Happy</h2>
-                            <div class="content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima id vel
-                                voluptatibus ad odit odio laboriosam cupiditate unde velit reprehenderit doloribus,
-                                quaerat molestiae quisquam nam aliquid quis nulla eligendi reiciendis.</div>
-                            <a href="#">Đọc tiếp</a>
-                        </div>
+                </div>
+                <div class="news">
+                    <img src="/image/news/news3.jpg" alt="">
+                    <div class="news-info">
+                        <small class="day">13-03-2022</small>
+                        <h2 class="title">Anatole</h2>
+                        <div class="content">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+                        <a href="#" class="middle"><span>Đọc tiếp</span><i class="fa-solid fa-right-long"></i></a>
                     </div>
                 </div>
             </div>
@@ -582,13 +419,13 @@
 
     <div class="footer">
         <hr>
-        <div class="footer-logo">
-            <img src="/image/logo.png" alt="No Image" />
+        <div class="footer-logo middle">
+            <img src="/image/logo/logo.png" alt="No Image" />
         </div>
-        <div class="footer-links">
+        <div class="footer-links middle">
             <div class="footer-item">
                 <h4>Đăng ký nhận thông tin mới nhất</h4>
-                <div class="footer-signup">
+                <div class="footer-signup icon">
                     <input type="text" placeholder="Điền mail..." class="signup-input">
                     <button class="signup-btn">
                         <i class="fa-solid fa-envelope"></i>
@@ -628,6 +465,9 @@
         </div>
     </div>
 </body>
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 <script src="/javascript/HomePage.js"></script>
 
 </html>
