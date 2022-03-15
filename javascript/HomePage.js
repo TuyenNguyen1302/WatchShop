@@ -28,7 +28,7 @@ var btnLeft = document.querySelector('.left');
 var btnRight = document.querySelector('.right');
 
 var currentIndex = 0;
-function updateImg(index){
+function updateImg(index) {
     currentIndex = index;
     showImg.src = listImg[index].getAttribute('src');
 }
@@ -63,7 +63,7 @@ btnRight.addEventListener('click', function () {
 
 })
 
-function autoShow(){
+function autoShow() {
     showImg.style.animation = '';
     if (currentIndex == 0) {
         currentIndex = listImg.length - 1;
@@ -75,7 +75,26 @@ function autoShow(){
         updateImg(currentIndex);
         showImg.style.animation = 'opacity 0.5s ease-in-out forwards';
     }, 100)
-    setTimeout(autoShow,2000);
+    setTimeout(autoShow, 2000);
 }
 
 autoShow();
+
+// POPUP CARD
+var close = document.querySelector('.popup-item i');
+var open = document.querySelectorAll('.card-btn .card-view');
+var popup = document.querySelector('.popup-card');
+var body = document.querySelector('body');
+
+function togglePopup(e) {
+    popup.classList.toggle('hide');
+    body.classList.toggle('scroll-none');
+}
+
+open.forEach(e => {
+    e.addEventListener('click', togglePopup)
+});
+close.addEventListener('click', togglePopup);
+popup.addEventListener('click', (e) => {
+    if (e.target == e.currentTarget) togglePopup(e);
+})
