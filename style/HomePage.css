@@ -40,7 +40,7 @@ a {
 h1 {
     padding: 0px 0 10px 0;
     width: fit-content;
-    margin: 30px auto;
+    margin: 0 auto 20px auto;
     border-bottom: 3px solid var(--primary-color);
 }
 img {
@@ -64,14 +64,16 @@ img {
     background: var(--primary-color);
     border-radius: 15px;
     color: white;
-    box-shadow: 5px 5px 8px #888888;
+    /* box-shadow: 5px 5px 8px #888888; */
+    /* box-shadow: 0px 0px 8px var(--second-color); */
     display: flex;
     justify-content: center;
     align-items: center;
 }
 .top-san-pham,
 .tin-tuc,
-.doi-phu-kien {
+.doi-phu-kien,
+.banner-doi-phu-kien {
     text-align: center;
     margin: 50px auto;
 }
@@ -151,19 +153,22 @@ img {
 }
 /* -------------CAM KẾT-------------- */
 .cam-ket {
-    grid-gap: 30px;
-    background: white;
-    margin-bottom: 4px;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    background: var(--primary-color);
+    text-align: center;
 }
 .cam-ket-item {
-    padding: 30px 5px;
+    padding: 30px 0;
 }
 .cam-ket-item i {
     margin: 0 auto;
     margin-bottom: 10px;
+    background: white;
+    color: var(--primary-color);
 }
-.cam-ket-item:hover {
-    background: var(--second-color);
+.cam-ket-item p {
+    color: white;
 }
 /*-------------- ĐỒNG HỒ NAM, NỮ ----------------*/
 .dong-ho-nu,
@@ -171,6 +176,11 @@ img {
     display: grid;
     grid-template-columns: 1fr 1fr;
     text-align: center;
+    margin-bottom: -4px;
+}
+.dong-ho-nu h1,
+.dong-ho-nam h1 {
+    margin: 0 auto;
 }
 .show-img {
     transition: 0.2s;
@@ -178,7 +188,6 @@ img {
 }
 .dong-ho-nu-detail,
 .dong-ho-nam-detail {
-    background: var(--background-color);
     padding: 90px;
 }
 /* ----LIST ---- LIST-CARD ---- CARD-DETAIL---- */
@@ -225,7 +234,7 @@ img {
     top: 3px;
     right: 3px;
     background: var(--alert-color);
-    border-radius: 50%;
+    border-radius: 10px;
     padding: 10px 5px;
     color: white;
 }
@@ -248,7 +257,7 @@ img {
 }
 .card-btn .icon:hover,
 .heading-account:hover,
-.heading-shopping:hover{
+.heading-shopping:hover {
     background: white;
     border: 1px solid var(--primary-color);
     color: var(--primary-color);
@@ -256,11 +265,42 @@ img {
     transform: scale(1.2);
 }
 /* -----ĐỒNG HỒ ĐÔI----PHỤ KIỆN----- */
+.banner-doi-phu-kien {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+}
+.banner-doi,
+.banner-phu-kien {
+    position: relative;
+    overflow: hidden;
+}
+.banner-doi h1,
+.banner-phu-kien h1 {
+    text-align: left;
+    width: fit-content;
+    padding-bottom: 5px;
+    border-bottom: 3px solid var(--primary-color);
+}
+.mua-ngay {
+    position: absolute;
+    top: 30%;
+    right: 10%;
+    flex-direction: column;
+}
+.banner-doi-phu-kien a,
+.popup-btn a {
+    background: var(--primary-color);
+    color: white;
+    padding: 10px 15px;
+    border-radius: 10px;
+    width: fit-content;
+}
+
 .doi-phu-kien {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    background: white;
-    padding: 50px 90px;
+    padding: 0px 90px;
     grid-gap: 50px;
 }
 .doi-phu-kien h1 {
@@ -274,16 +314,17 @@ img {
     margin: 20px 0;
     grid-gap: 10px;
     position: relative;
-    box-shadow: 0px 0px 5px var(--second-color);
-    border-radius: 15px;
+    box-shadow: 0px 0px 5px var(--primary-color);
+    background: var(--background-color);
+    border-radius: 10px;
 }
 .item-image img {
     width: 150px;
     padding: 5px 0;
     margin-bottom: -4px;
-    background: var(--background-color);
-    box-shadow: 0px 0px 5px var(--second-color);
-    border-radius: 15px;
+    background: white;
+    box-shadow: 0px 0px 5px var(--primary-color);
+    border-radius: 10px;
 }
 .item-detail .card-btn {
     right: 65px;
@@ -292,7 +333,8 @@ img {
     display: flex;
     flex-direction: column;
 }
-.item-info .price {
+.item-info .price,
+.popup-info .price {
     justify-content: left;
     padding: 0;
     grid-gap: 15px;
@@ -324,7 +366,7 @@ img {
     background: var(--primary-color);
     margin-top: 100px;
 }
-hr {
+.footer hr {
     visibility: hidden;
 }
 .footer-logo {
@@ -410,17 +452,60 @@ hr {
     z-index: 5;
 }
 .popup-item {
-    background: var(--second-color);
+    background: white;
     height: 550px;
     position: relative;
+    /* căn giữa theo chiều dọc */
+    top: 50%;
+    transform: translateY(-50%);
 }
-.popup-item img {
-    width: 400px;
-}
-.popup-item i {
+.close {
     position: absolute;
     top: 2%;
     right: 2%;
+}
+.popup-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    height: 100%;
+}
+.popup-img {
+    background: var(--second-color);
+}
+.popup-list-img img {
+    width: 90px;
+    height: 100px;
+    padding: 5px 0;
+    background: var(--background-color);
+}
+.popup-show-img img {
+    width: 450px;
+    height: 450px;
+}
+.popup-info {
+    padding: 50px 30px 0 30px;
+}
+.popup-info hr {
+    margin: 20px 0;
+}
+.desc p {
+    font-weight: 300;
+}
+.quanlity input {
+    border: 1px solid var(--primary-color);
+    width: 80px;
+    margin: 5px 0 36px 0;
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+.popup-btn {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+    text-align: center;
+}
+.popup-btn a {
+    width: 100%;
 }
 .hide {
     display: none;
