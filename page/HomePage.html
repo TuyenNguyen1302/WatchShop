@@ -621,8 +621,11 @@
                         <img src="/image/her1.png" alt="">
                         <img src="/image/him1.png" alt="">
                     </div>
-                    <div class="popup-show-img">
-                        <img src="/image/her1.png" alt="" class="popupImg">
+                    <div class="popup-show-img zoomer">
+                        <div class="zoomer-img">
+                            <img src="/image/her1.png" alt="" class="popupImg">
+                        </div>
+                        <div class="result"></div>
                     </div>
                 </div>
                 <div class="popup-info">
@@ -644,12 +647,24 @@
                         <del class="old">3.000.000 ₫</del>
                         <span class="new"><big>2.199.000 ₫</big></span>
                     </div>
-                    <hr>
-                    <div class="desc">
-                        <h3>Mo ta san pham</h3>
+                    <div class="tab">
+                        <button class="tablink active" onclick="openTab(event, 'desc')">
+                            <h3>Mo ta san pham</h3>
+                        </button>
+                        <button class="tablink" onclick="openTab(event, 'detail')">
+                            <h3>Chi tiet san pham</h3>
+                        </button>
+                    </div>
+                    <div class="tabcontent" id="desc" style="display: block;">
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi laboriosam facere magni beatae
                             animi, tempore tenetur minus sequi ea dolorum dolorem vel autem velit recusandae, non, est
                             ratione enim nihil.</p>
+                    </div>
+                    <div class="tabcontent" id="detail">
+                        <p><b>Thuong hieu</b><span>: Breda</span></p>
+                        <p><b>Thuong hieu</b><span>: Breda</span></p>
+                        <p><b>Thuong hieu</b><span>: Breda</span></p>
+                        <p><b>Thuong hieu</b><span>: Breda</span></p>
                     </div>
                     <hr>
                     <div class="quanlity">
@@ -711,6 +726,9 @@
                 <a href="">CSKH: <b>1900.9991.66 (8h00-21h30)</b></a>
                 <a href="">Email: <b>anatole@gmail.com</b></a>
             </div>
+        </div>
+        <div class="footer-copyright">
+            <small>&copy; Copyright 2022, Nguyễn Lê Ngọc Tuyền</small>
         </div>
     </div>
 </body>
