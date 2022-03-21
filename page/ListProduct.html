@@ -19,7 +19,9 @@
     <div class="header">
         <div class="heading">
             <div class="heading-left">
-                <p>Sự khởi đầu tốt đẹp !</p>
+                <div class="heading-logon">
+                    <p>Sự khởi đầu tốt đẹp !</p>
+                </div>
             </div>
             <a href="/page/HomePage.html" class="heading-logo">
                 <img src="/image/logo/logo.png" alt="No Image" />
@@ -110,7 +112,7 @@
                 <a href="">Titan</a>
             </div>
         </div>
-        <div class="list-product">            
+        <div class="list-product">
         </div>
         <div class="page-product middle">
             <i class="fa-solid fa-angle-left">&nbsp</i>
@@ -119,6 +121,74 @@
             <a href="">3</a>&nbsp
             <i class="fa-solid fa-angle-right"></i>
         </div>
+    </div>
+    <div class="popup-card hide">
+        <div class="container popup-item">
+            <i class="fa-solid fa-xmark close"></i>
+            <div class="popup-grid">
+                <div class="popup-img middle">
+                    <div class="popup-list-img">
+                        <img src="/image/her1.png" alt="">
+                        <img src="/image/him1.png" alt="">
+                    </div>
+                    <div class="popup-show-img zoomer">
+                        <div class="zoomer-img">
+                            <img src="/image/her1.png" alt="" class="popupImg">
+                        </div>
+                        <div class="result"></div>
+                    </div>
+                </div>
+                <div class="popup-info">
+                    <div class="category">
+                        <a href="">Dong ho nu</a>
+                    </div>
+                    <h2 class="name">Dong ho Breda</h2>
+                    <div class="rating">
+                        <span>
+                            <i class="fa-solid fa-star star"></i>
+                            <i class="fa-solid fa-star star"></i>
+                            <i class="fa-solid fa-star star"></i>
+                            <i class="fa-solid fa-star star"></i>
+                            <i class="fa-solid fa-star star"></i>
+                        </span>
+                        <small>(13 đánh giá)</small>
+                    </div>
+                    <div class="price">
+                        <del class="old">3.000.000 ₫</del>
+                        <span class="new"><big>2.199.000 ₫</big></span>
+                    </div>
+                    <div class="tab">
+                        <button class="tablink active" onclick="openTab(event, 'desc')">
+                            <h3>Mo ta san pham</h3>
+                        </button>
+                        <button class="tablink" onclick="openTab(event, 'detail')">
+                            <h3>Chi tiet san pham</h3>
+                        </button>
+                    </div>
+                    <div class="tabcontent" id="desc" style="display: block;">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi laboriosam facere magni beatae
+                            animi, tempore tenetur minus sequi ea dolorum dolorem vel autem velit recusandae, non, est
+                            ratione enim nihil.</p>
+                    </div>
+                    <div class="tabcontent" id="detail">
+                        <p><b>Thuong hieu</b><span>: Breda</span></p>
+                        <p><b>Thuong hieu</b><span>: Breda</span></p>
+                        <p><b>Thuong hieu</b><span>: Breda</span></p>
+                        <p><b>Thuong hieu</b><span>: Breda</span></p>
+                    </div>
+                    <hr>
+                    <div class="quanlity">
+                        <h3>So luong</h3>
+                        <input type="number" placeholder="1">
+                    </div>
+                    <div class="popup-btn">
+                        <a>Mua ngay</a>
+                        <a>Xem chi tiet</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </div>
     <div class="footer">
         <hr>

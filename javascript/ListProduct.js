@@ -52,3 +52,38 @@ listProduct.forEach(item => {
                         </div>`;
     card.appendChild(newCard);
 })
+
+// POPUP CARD
+var close = document.querySelector('.popup-item i');
+var open = document.querySelectorAll('.card-btn .card-view');
+var popup = document.querySelector('.popup-card');
+var body = document.querySelector('body');
+
+function togglePopup(e) {
+    popup.classList.toggle('hide');
+    body.classList.toggle('scroll-none');
+}
+
+open.forEach(e => {
+    e.addEventListener('click', togglePopup);
+});
+close.addEventListener('click', togglePopup);
+popup.addEventListener('click', (e) => {
+    if (e.target == e.currentTarget) togglePopup(e);
+})
+
+// POPUP IMG
+var popupShowImg = document.querySelector('.popupImg');
+var popupListImg = document.querySelectorAll('.popup-list-img img');
+
+var popupCurrentIndex = 0;
+
+function updateImagePopup(popupIndex) {
+    popupCurrentIndex = popupIndex;
+    popupShowImg.src = popupListImg[popupIndex].getAttribute('src');
+}
+popupListImg.forEach((imgE, popupIndex) => {
+    imgE.addEventListener('click', function (e) {
+        updateImagePopup(popupIndex);
+    })
+})
