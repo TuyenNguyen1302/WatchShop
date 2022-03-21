@@ -1,0 +1,112 @@
+[
+    {
+        "img1": "/image/breda/her/her1.png",
+        "img2": "/image/breda/her/her1-1.png",
+        "sale": "-23%",
+        "category": "Đồng hồ nữ",
+        "name": "Breda Esther 1735, 26mm",
+        "old": "4.788.000",
+        "new": "3.680.000"
+    },
+    {
+        "img1": "/image/breda/him/him1.png",
+        "img2": "/image/breda/him/him1-1.png",
+        "sale": "-23%",
+        "category": "Đồng hồ nam",
+        "name": "Breda Virgil, 26mm",
+        "old": "4.788.000",
+        "new": "3.680.000"
+    },
+    {
+        "img1": "/image/breda/him/him2-1.png",
+        "img2": "/image/breda/him/him2-2.png",
+        "sale": "-20%",
+        "category": "Đồng hồ nam",
+        "name": "BREDA Revel, 18mm",
+        "old": "5.366.091",
+        "new": "4.255.000"
+    },
+    {
+        "img1": "/image/breda/her/her2-1.png",
+        "img2": "/image/breda/her/her2-2.png",
+        "sale": "-22%",
+        "category": "Đồng hồ nữ",
+        "name": "BREDA Jane, 23mm",
+        "old": "5.413.682",
+        "new": "4.255.000"
+    },
+    {
+        "img1": "/image/breda/him/him3-1.png",
+        "img2": "/image/breda/him/him3-2.png",
+        "sale": "-34%",
+        "category": "Đồng hồ nam",
+        "name": "BREDA Visser 1728a, 35MM",
+        "old": "2.837.000",
+        "new": "1.856.000"
+    },
+
+    {
+        "img1": "https://cdn.shopdongho.com/2018/09/MTP-1215A-1A2DF-LTP-1215A-1A2DF.jpg",
+        "img2": "https://cdn.shopdongho.com/2018/01/MTP-1215A-1ADF.jpg",
+        "sale": "-20%",
+        "category": "Đồng hồ đôi",
+        "name": "Casio MTP-1215A-1A2DF - LTP-1215A-1A2DF",
+        "old": "2.532.000",
+        "new": "2.022.000"
+    },
+    {
+        "img1": "https://cdn-amz.fadoglobal.io/images/I/81fBcm5EnTL._SR476,476_.jpg",
+        "img2": "https://cdn-amz.fadoglobal.io/images/I/71OQL5GKQNL._SR476,476_.jpg",
+        "sale": "-20%",
+        "category": "Đồng hồ đôi",
+        "name": "Titan 19272927BM01",
+        "old": "9.751.000",
+        "new": "7.771.418"
+    },
+    {
+        "img1": "https://cdn.shopify.com/s/files/1/0401/1239/0301/products/2_fff8590a-91b4-4e50-84da-d29f19a192c9_1296x.png?v=1626809685",
+        "img2": "https://cdn.shopify.com/s/files/1/0401/1239/0301/products/2_64fca8e2-4636-41e9-b0a4-56058d54f1ee_1296x.png?v=1626809989",
+        "sale": "-15%",
+        "category": "Đồng hồ đôi",
+        "name": "Casio BEM-100D-1A2VDF - BEL-100D-1A2VDF",
+        "old": "3.815.000",
+        "new": "3.240.000"
+    },
+
+    {
+        "img1": "https://fossil.scene7.com/is/image/FossilPartners/S181501_main?$sfcc_fos_medium$",
+        "img2": "https://fossil.scene7.com/is/image/FossilPartners/S181501_1?$sfcc_fos_large$",
+        "sale": "-10%",
+        "category": "Phụ kiện",
+        "name": "Dây đeo da màu nâu mềm mại, 18mm",
+        "old": "998.000",
+        "new": "897.000"
+    },
+    {
+        "img1": "https://fossil.scene7.com/is/image/FossilPartners/S181369_main?$sfcc_fos_large$",
+        "img2": "https://fossil.scene7.com/is/image/FossilPartners/S181369_1?$sfcc_fos_large$",
+        "sale": "-25%",
+        "category": "Phụ kiện",
+        "name": "Dây đeo silicon màu đen quyền lực, 18mm",
+        "old": "920.000",
+        "new": "690.000"
+    },
+    {
+        "img1": "https://fossil.scene7.com/is/image/FossilPartners/S380006_main?$sfcc_fos_large$",
+        "img2": "https://fossil.scene7.com/is/image/FossilPartners/S380006_1?$sfcc_fos_large$",
+        "sale": "-23%",
+        "category": "Phụ kiện",
+        "name": "Dây đeo thép không gỉ 38mm/ 40mm/ 41mm",
+        "old": "2.069.000",
+        "new": "1.587.000"
+    },
+    {
+        "img1": "https://fossil.scene7.com/is/image/FossilPartners/S221441_main?$sfcc_fos_large$",
+        "img2": "https://fossil.scene7.com/is/image/FossilPartners/S221441_1?$sfcc_fos_large$",
+        "sale": "-20%",
+        "category": "Phụ kiện",
+        "name": "Dây đeo thép không gỉ 22mm",
+        "old": "1.725.000",
+        "new": "1.380.000"
+    }
+]

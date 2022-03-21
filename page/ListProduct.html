@@ -1,13 +1,178 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ListProduct</title>
+    <title>Anatole Watch</title>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" href="/style/HomePage.css">
     <link rel="stylesheet" href="/style/ListProduct.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;500;700&display=swap"
+        rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="/image/logo/favicon_A.png">
 </head>
+
 <body>
-    
+    <div class="header">
+        <div class="heading">
+            <div class="heading-left">
+                <p>Sự khởi đầu tốt đẹp !</p>
+            </div>
+            <a href="/page/HomePage.html" class="heading-logo">
+                <img src="/image/logo/logo.png" alt="No Image" />
+            </a>
+            <div class="heading-right middle">
+                <div class="heading-search icon">
+                    <input type="text" class="search-input" placeholder="Tìm kiếm..." />
+                    <button class="search-btn">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                </div>
+                <a href="#" class="heading-account icon">
+                    <i class="fa-solid fa-user"></i>
+                </a>
+                <a href="#" class="heading-shopping icon">
+                    <i class="fa-solid fa-bag-shopping"></i>
+                </a>
+                <label class="shopping-number middle">
+                    <i class="fa-solid fa-caret-left"></i>
+                    <span>0</span>
+                </label>
+            </div>
+        </div>
+        <div class="nav middle">
+            <div class="dropdown">
+                <a href="#">Thương hiệu</a>
+                <i class="fa-solid fa-caret-down"></i>
+                <div class="dropdown-content">
+                    <a href="">Breda</a>
+                    <a href="">Casio</a>
+                    <a href="">Critizen</a>
+                    <a href="">Titan</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <a href="/page/ListProduct.html">Đồng hồ nữ</a>
+                <i class="fa-solid fa-caret-down"></i>
+                <div class="dropdown-content">
+                    <a href="/page/ListProduct.html">Breda</a>
+                    <a href="/page/ListProduct.html">Casio</a>
+                    <a href="/page/ListProduct.html">Critizen</a>
+                    <a href="/page/ListProduct.html">Titan</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <a href="/page/ListProduct.html">Đồng hồ nam</a>
+                <i class="fa-solid fa-caret-down"></i>
+                <div class="dropdown-content">
+                    <a href="/page/ListProduct.html">Breda</a>
+                    <a href="/page/ListProduct.html">Casio</a>
+                    <a href="/page/ListProduct.html">Critizen</a>
+                    <a href="/page/ListProduct.html">Titan</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <a href="/page/ListProduct.html">Đồng hồ đôi</a>
+                <i class="fa-solid fa-caret-down"></i>
+                <div class="dropdown-content">
+                    <a href="/page/ListProduct.html">Breda</a>
+                    <a href="/page/ListProduct.html">Casio</a>
+                    <a href="/page/ListProduct.html">Critizen</a>
+                    <a href="/page/ListProduct.html">Titan</a>
+                </div>
+            </div>
+            <a href="/page/ListProduct.html">Phụ kiện</a>
+            <a href="#">Tin tức</a>
+        </div>
+    </div>
+    <div class="body">
+        <!-- /* Banner */ -->
+        <div class="banner">
+            <video src="/image/banner/banner1.mp4" width="100%" autoplay loop></video>
+        </div>
+        <h1>Danh sách sản phẩm</h1>
+        <div class="link middle">
+            <a href="/page/HomePage.html">Trang chủ &nbsp</a>
+            <i class="fa-solid fa-angles-right">&nbsp</i>
+            <p>Danh sách sản phẩm</p>
+        </div>
+        <div class="select-dropdown">
+            <button class="dropdown-toggle middle">Thương hiệu
+                <i class="fa-solid fa-caret-down"></i>
+            </button>
+            <div class="dropdown-menu middle">
+                <a href="">Breda</a>
+                <a href="">Casio</a>
+                <a href="">Critizen</a>
+                <a href="">Titan</a>
+            </div>
+        </div>
+        <div class="list-product">            
+        </div>
+        <div class="page-product middle">
+            <i class="fa-solid fa-angle-left">&nbsp</i>
+            <a href="">1</a>&nbsp
+            <a href="">2</a>&nbsp
+            <a href="">3</a>&nbsp
+            <i class="fa-solid fa-angle-right"></i>
+        </div>
+    </div>
+    <div class="footer">
+        <hr>
+        <div class="footer-logo middle">
+            <img src="/image/logo/logo.png" alt="No Image" />
+        </div>
+        <div class="footer-links middle">
+            <div class="footer-item">
+                <h4>Đăng ký nhận thông tin mới nhất</h4>
+                <div class="footer-signup icon">
+                    <input type="text" placeholder="Điền mail..." class="signup-input">
+                    <button class="signup-btn">
+                        <i class="fa-solid fa-envelope"></i>
+                    </button>
+                </div>
+                <a href="#" class="footer-icon">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+                <a href="#" class="footer-icon">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="#" class="footer-icon">
+                    <i class="fa-brands fa-pinterest"></i>
+                </a>
+                <a href="#" class="footer-icon">
+                    <i class="fa-brands fa-youtube"></i>
+                </a>
+            </div>
+            <div class="footer-item">
+                <h4>Về thương hiệu Anatole</h4>
+                <a href="#">Giới thiệu Anatole</a>
+                <a href="#">Các điều khoản dịch vụ</a>
+                <a href="#">Chính sách bảo mật thông tin</a>
+            </div>
+            <div class="footer-item">
+                <h4>Hỗ trợ khách hàng</h4>
+                <a href="">Tra cứu đơn hàng</a>
+                <a href="">Câu hỏi thường gặp</a>
+                <a href="">Hướng dẫn mua hàng</a>
+            </div>
+            <div class="footer-item">
+                <h4>Liên hệ</h4>
+                <a href="">Mua hàng: <b>1900.9990.65 (7:30-22h00)</b></a>
+                <a href="">CSKH: <b>1900.9991.66 (8h00-21h30)</b></a>
+                <a href="">Email: <b>anatole@gmail.com</b></a>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <small>&copy; Copyright 2022, Nguyễn Lê Ngọc Tuyền</small>
+        </div>
+    </div>
 </body>
+<script src="/data/ListProduct.json"></script>
+<script src="/javascript/index.js"></script>
+<script type="module" src="/javascript/ListProduct.js"></script>
+
 </html>

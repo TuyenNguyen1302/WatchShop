@@ -15,60 +15,16 @@ $(document).ready(function () {
     });
 })
 
-// MOCK Data -> reder
-var mockData = [
-    {
-        img1: '/image/breda/her/her1.png',
-        img2: '/image/breda/her/her1-1.png',
-        sale: '-23%',
-        category: 'Đồng hồ nữ',
-        name: 'Breda Esther 1735, 26mm',
-        old: '4.788.000',
-        new: '3.680.000'
-    },
-    {
-        img1: '/image/breda/him/him1.png',
-        img2: '/image/breda/him/him1-1.png',
-        sale: '-23%',
-        category: 'Đồng hồ nam',
-        name: 'Breda Virgil, 26mm',
-        old: '4.788.000',
-        new: '3.680.000'
-    },
-    {
-        img1: '/image/breda/him/him2-1.png',
-        img2: '/image/breda/him/him2-2.png',
-        sale: '-20%',
-        category: 'Đồng hồ nam',
-        name: 'BREDA Revel, 18mm',
-        old: '5.366.091',
-        new: '4.255.000'
-    },
-    {
-        img1: '/image/breda/her/her2-1.png',
-        img2: '/image/breda/her/her2-2.png',
-        sale: '-22%',
-        category: 'Đồng hồ nữ',
-        name: 'BREDA Jane, 23mm',
-        old: '5.413.682',
-        new: '4.255.000'
-    },
-    {
-        img1: '/image/breda/him/him3-1.png',
-        img2: '/image/breda/him/him3-2.png',
-        sale: '-34%',
-        category: 'Đồng hồ nam',
-        name: 'BREDA Visser 1728a, 35MM',
-        old: '2.837.000',
-        new: '1.856.000'
-    },
-];
+// Read data.json -> reder
+// TOP SẢN PHẨM
+import hotProduct from "/data/HotProduct.json" assert { type: "json" };
+console.log(hotProduct);
 
 var card = document.querySelector('.list-card');
 
-// Khởi tạo data
+// load data
 card.innerHTML = '';
-mockData.forEach(item => {
+hotProduct.forEach(item => {
     let newCard = document.createElement('div');
     newCard.classList.add('card-detail');
     newCard.innerHTML = `<a href="#" class="card-img">
@@ -111,10 +67,96 @@ mockData.forEach(item => {
     card.appendChild(newCard);
 })
 
-var searchBtn = document.querySelector('.search-btn');
-searchBtn.addEventListener('click', function () {
-    this.parentElement.classList.toggle('open');
-    this.previousElementSibling.focus();
+// ĐỒNG HỒ ĐÔI
+import couple from "/data/CoupleWatch.json" assert { type: "json" };
+console.log(couple);
+
+var itemDetail = document.querySelector('.list-item');
+
+itemDetail.innerHTML = '';
+couple.forEach(itemCouple => {
+    let newItem = document.createElement('div');
+    newItem.classList.add('item-detail');
+    newItem.innerHTML = `<a href="" class="item-image">
+                            <img src="${itemCouple.img}" alt="">
+                        </a>
+                        <div class="card-btn">
+                            <button class="card-shopping icon">
+                                <i class="fa-solid fa-bag-shopping"></i>
+                            </button>
+                            <button class="card-like icon">
+                                <i class="fa-solid fa-heart"></i>
+                            </button>
+                            <button class="card-view icon">
+                                <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+                            </button>
+                        </div>
+                        <div class="item-info">
+                            <div class="sale">
+                                <span>${itemCouple.sale}</span>
+                            </div>
+                            <h3 class="name">${itemCouple.name}</h3>
+                            <div class="rating">
+                                <span>
+                                    <i class="fa-solid fa-star star"></i>
+                                    <i class="fa-solid fa-star star"></i>
+                                    <i class="fa-solid fa-star star"></i>
+                                    <i class="fa-solid fa-star star"></i>
+                                    <i class="fa-solid fa-star star"></i>
+                                </span>
+                            </div>
+                            <div class="price">
+                                <del class="old">${itemCouple.old} ₫</del>
+                                <span class="new"><big>${itemCouple.new} ₫</big></span>
+                            </div>
+                        </div>`;
+    itemDetail.appendChild(newItem);
+})
+
+// PHỤ KIỆN
+import accessary from "/data/Accessary.json" assert { type: "json"};
+console.log(accessary);
+
+var itemDetailAccessary = document.querySelector('.phu-kien .list-item');
+
+itemDetailAccessary.innerHTML = '';
+accessary.forEach(itemAccessary => {
+    let newItem = document.createElement('div');
+    newItem.classList.add('item-detail');
+    newItem.innerHTML = `<a href="" class="item-image">
+                            <img src="${itemAccessary.img}" alt="">
+                        </a>
+                        <div class="card-btn">
+                            <button class="card-shopping icon">
+                                <i class="fa-solid fa-bag-shopping"></i>
+                            </button>
+                            <button class="card-like icon">
+                                <i class="fa-solid fa-heart"></i>
+                            </button>
+                            <button class="card-view icon">
+                                <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+                            </button>
+                        </div>
+                        <div class="item-info">
+                            <div class="sale">
+                                <span>${itemAccessary.sale}</span>
+                            </div>
+                            <h3 class="name">${itemAccessary.name}</h3>
+                            <div class="rating">
+                                <span>
+                                    <i class="fa-solid fa-star star"></i>
+                                    <i class="fa-solid fa-star star"></i>
+                                    <i class="fa-solid fa-star star"></i>
+                                    <i class="fa-solid fa-star star"></i>
+                                    <i class="fa-solid fa-star star"></i>
+                                </span>
+                            </div>
+                            <div class="price">
+                                <del class="old">${itemAccessary.old} ₫</del>
+                                <span class="new"><big>${itemAccessary.new} ₫</big></span>
+                            </div>
+                        </div>`;
+    itemDetailAccessary.appendChild(newItem);
 })
 
 // FEMAL
@@ -269,31 +311,3 @@ popupListImg.forEach((imgE, popupIndex) => {
         updateImagePopup(popupIndex);
     })
 })
-
-// POPUP TAB
-function openTab(evt, tabName) {
-    var i, tabcontent, tablink;
-    tabcontent = document.getElementsByClassName('tabcontent');
-    for (i = 0; i < tabcontent.length; i++) {
-        tabcontent[i].style.display = "none";
-    }
-    tablink = document.getElementsByClassName('tablink');
-    for (i = 0; i < tabcontent.length; i++) {
-        tablink[i].className = tablink[i].className.replace(" active", "");
-    }
-    document.getElementById(tabName).style.display = "block";
-    evt.currentTarget.className += " active";
-}
-
-// HEADER SCROLL
-window.onscroll = function () { scrollFunction() };
-
-function scrollFunction() {
-    if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-        document.querySelector('.nav').style.cssText = `padding: 10px;`;
-        document.querySelector('.heading-logo').style.cssText = `width: 100px;`;
-    } else {
-        document.querySelector('.nav').style.cssText = `padding: 20px `;
-        document.querySelector('.heading-logo').style.cssText = `width: 130px;`;
-    }
-}
